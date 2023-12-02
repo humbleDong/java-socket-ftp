@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class FileClient {
     private static final String HOST = "127.0.0.1";
-    private static final int TCP_PORT = 2021;
+    private static final int TCP_PORT = 2021;//消息
     private static final int UDP_PORT = 2020;
 
     // 下载路径
