@@ -73,6 +73,15 @@ public class FileServer {
      * @return boolean
      */
     public static boolean hasRoot(String root) {
-        return new File(root).exists();
+        File file = new File(root);
+        if (!file.exists()) {
+            System.out.println("当前文件路径不存在");
+            return false;
+        }
+        if (!file.isDirectory()) {
+            System.out.println("当前Root路径不是目录");
+            return false;
+        }
+        return true;
     }
 }
